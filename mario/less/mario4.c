@@ -16,6 +16,7 @@ int main(void)
     //print out this many columns
       for (int j = 0; j < n; j++)
       {
+       if( j< n){
        printf(" ");
       }
       else {
@@ -24,7 +25,7 @@ int main(void)
 }
 printf("\n");
   }
-
+}
 }
 
 //debug50 ./mario4
