@@ -10,10 +10,9 @@ int main(void)
     {
         cash = get_float("Enter cash: ");
         printf("cash %.2f\n", cash);
-        // printf("cents%i\n", cents);
     }
     while (cash < 0);
-    // cents = round(cash * 100.00);
+    cents = round(cash * 100.00);
     for (int i = 0; i <= cents; i++)
     {
         while (cents >= 25)
