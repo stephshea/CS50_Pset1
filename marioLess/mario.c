@@ -1,5 +1,5 @@
 #include <cs50.h>
-#include <stdio.h>
+#include <stdio.h>  // ****pr-jb consider adding a return between include and int main
 int main(void)
 {
     int r, h, s, n;
@@ -9,10 +9,10 @@ int main(void)
     {
         n = get_int("Enter height: ");
     }
-    while (n < 0 || n > 23);
+    while (n < 0 || n > 23);  // ****pr-jb while condition to check if height is between 0 and 23
 
     //sets up rows
-    for (r = 1; r <= n; r++)
+    for (r = 1; r <= n; r++)  // **** pr-jb consider changing variable names to row, space, hashes(readability)
     {
         //prints spaces
         for (s = 1; s < n - r + 1; s++)
@@ -27,7 +27,7 @@ int main(void)
         //creates new row
         printf("\n");
     }
-    return 0;
+    return 0;  // ****pr-jb good practice to return 0 when the code worked correctly
 }
 //     printf("\n");
 //     for (int i = 0; i < n; i++)

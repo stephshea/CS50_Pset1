@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main(void)
 {
-    int r, h, s, n;
+    int r, h, s, n;  // ****pr-jb consider being more descriptive with your variable names
     //getting height of pyramid
     // eprintf("about to prompt for number\n");
     do
@@ -25,9 +25,9 @@ int main(void)
             printf("#");
         }
         //adds 2 space gap
-        printf("  ");
+        printf("  ");  // ****pr-jb creates a 2 space gap between sides of the pyramid
         //completes hashes
-        for (h = 0; h < n - s + 1; h++)
+        for (h = 0; h < n - s + 1; h++) // ****pr-jb creates the right hand side of the pyramid
         {
             printf("#");
         }

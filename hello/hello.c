@@ -1,6 +1,6 @@
 #include <stdio.h>
 //include like require from node; access to inputs and outputs
-#include <cs50.h>
+#include <cs50.h>  //****pr-jb- no need to include cs50.h
 
 int main(void)
 //void explicitly states that there are no parameters
