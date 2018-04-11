@@ -1,33 +1,36 @@
 #include <cs50.h>
 #include <stdio.h>
+
 int main(void)
 {
-    int r, h, s, n;
+    int row, hash, space, height;
     //getting height of pyramid
     // eprintf("about to prompt for number\n");
     do
     {
-        n = get_int("Enter height: ");
+        height = get_int("Enter height: ");
     }
-    while (n < 0 || n > 23);
+    //checks that height input meets parameters
+    while (height < 0 || height > 23);
 
     //sets up rows
-    for (r = 1; r <= n; r++)
+    for (row = 1; row <= height; row++)
     {
         //prints spaces
-        for (s = 1; s < n - r + 1; s++)
+        for (space = 1; space < height - row + 1; space++)
         {
             printf(" ");
         }
         //prints #s
-        for (h = 0; h < n - s + 1; h++)
+        for (hash = 0; hash < height - space + 1; hash++)
         {
             printf("#");
         }
         //adds 2 space gap
         printf("  ");
+
         //completes hashes
-        for (h = 0; h < n - s + 1; h++)
+        for (hash = 0; hash < height - space + 1; hash++)
         {
             printf("#");
         }
