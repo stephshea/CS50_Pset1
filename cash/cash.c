@@ -8,18 +8,23 @@ int main(void)
 {
     do
     {
+        //use float initially to get amount
         cash = get_float("Enter cash: ");
         printf("cash %.2f\n", cash);
     }
     while (cash < 0);
+    //convcerts cash float to an int
     cents = round(cash * 100.00);
-    for (int i = 0; i <= cents; i++)
     {
+    //interates thru each coin value from highest to lowest
         while (cents >= 25)
         {
+            //subtract 25 from cents until less than 25 remains
             cents = cents - 25;
+            //add 1 to count for each 25 subtraction
             count = count + 1;
         }
+        //repeats logic for 25 for each lesser increment
         while (cents < 25 && cents >= 10)
         {
             cents = cents - 10;
@@ -36,6 +41,6 @@ int main(void)
             count = count + 1;
         }
     }
+    //returns least amount of coins needed
     printf("number of coins %i\n", count);
-    return 0;
 }
