@@ -28,5 +28,6 @@ int main(void)
         //creates new row
         printf("\n");
     }
-    return 0;
+    return 0; // Zero indicates success, while any
+  // Non-Zero value indicates a failure/error
 }
